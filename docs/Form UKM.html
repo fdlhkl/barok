@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Unit Kegiatan Mahasiswa</title>
+<style>
+    /* Style untuk layout formulir */
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fefefe;
+        background-image: url('background.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulir Unit Kegiatan Mahasiswa</h2>
+    <form>
+        <label for="nama_lengkap">Nama Lengkap:</label>
+        <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Lengkap Anda" required>
+
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan Alamat Email Anda" required>
+
+        <label for="nomor_telepon">Nomor Telepon:</label>
+        <input type="tel" id="nomor_telepon" name="nomor_telepon" placeholder="Masukkan Nomor Telepon Anda" required>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+
+        <label for="alamat_rumah">Alamat Rumah:</label>
+        <input type="text" id="alamat_rumah" name="alamat_rumah" placeholder="Masukkan Alamat Rumah Anda" required>
+
+        <label for="kota">Kota:</label>
+        <input type="text" id="kota" name="kota" placeholder="Masukkan Kota Tempat Tinggal Anda" required>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="">Jenis Kelamin </option>
+            <option value="laki-laki">Laki-Laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+
+        <label for="pilihan_ukm">Pilihan Unit Kegiatan Mahasiswa:</label>
+        <select id="pilihan_ukm" name="pilihan_ukm" required>
+            <option value="">Pilihan </option>
+            <option value="Sepak Bola">Sepak Bola</option>
+            <option value="Cakrawala">Cakrawala</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Tennis">Tennis</option>
+            <option value="Voli">Voli</option>
+            <option value="Futsal">Futsal</option>
+            <option value="Taekwondo">Taekwondo</option>
+            <option value="Pencak Silat">Pencak Silat</option>
+            <option value="English Club">English Club</option>
+            <option value="Tari Tradisional">Tari Tradisional</option>
+            <option value="Dance">Dance</option>
+            <option value="paduan Suara">Paduan suara</option>
+            <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+        </select>
+
+
+
+        <label for="alasan_memilih">Alasan Memilih:</label>
+        <input type="text" id="alasan_memilih" name="alasan_memilih" placeholder="Masukkan Alasan Memilih Unit Kegiatan Mahasiswa Tersebut !!!" required>
+
+
+
+
+        <button type="submit">Daftar</button>
+    </form>
+</div>
+
+</body>
+</html>
